@@ -5,6 +5,9 @@ $header_back_color: #0288d1;
 $header_content_color: #4fc3f7;
 
 
+$content_color_back: #FBC02D;
+$content_color_main: #757575;
+
 $footer_color_back: #3e2723;
 
 * {
@@ -81,6 +84,13 @@ header {
 
 .body {
   flex: 1;
+  background-color: $content_color_back;
+  .container: {
+    background-color: $content_color_main;
+  }
+  .inner-body {
+    
+  }
 }
 
 
