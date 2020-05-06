@@ -1,11 +1,16 @@
 @import "./fonts/fonts.scss";
 
-$tx_color: rgb(153, 191, 0);
+$tx_color: #ff5722;
+$header_back_color: #0288d1;
+$header_content_color: #4fc3f7;
+
+
+$footer_color_back: #3e2723;
 
 * {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 26px;
   transition: all .4s;
   color: $tx_color;
   font-weight: 600;
@@ -30,11 +35,11 @@ ul {
 }
 
 .title {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 700;
-  color: lighten($tx_color, 20%);
+  color: darken($tx_color, 20%);
   &:hover {
-    font-size: 40px;
+    color: invert($tx_color);
   }
 }
 
@@ -44,27 +49,42 @@ ul {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 
 header {
-  background-color: #000;
+  background-color: $header_back_color;
   height: 70px;
   min-height: 60px;
   .container {
     align-items: center;
   }
   .inner-header {
+    background-color: $header_content_color;
     width: 1200px;
     margin: 0 auto;
     height: 100%;
     .title {
-
+      &:hover {
+        letter-spacing: .2em;
+      }
+    }
+    a {
+      &:hover {
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
     }
   }
 }
 
 .body {
-  flex: auto;
+  flex: 1;
+}
+
+
+footer {
+  max-height: 90px;
+  background-color: $footer_color_back;
 }
