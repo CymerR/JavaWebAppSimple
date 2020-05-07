@@ -7,8 +7,9 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(VueResource);
+Vue.use(Vuetify);
 
 new Vue({
-  el: '#app',
+  el: '#vue-app',
   render: a => a(Main)
 })
