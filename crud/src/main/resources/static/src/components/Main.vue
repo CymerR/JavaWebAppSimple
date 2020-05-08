@@ -15,6 +15,7 @@ export default {
         {id: 1, text: "yeh"},
         {id: 2, text: "eboi"},
         {id: 3, text: "Git "},
+        {id: 4, text: "Git another "}
       ]
     }
   },

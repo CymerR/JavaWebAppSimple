@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+2|Press+Start+2P&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  transition: all 0.4s;
+  color: #ff5722;
+  font-weight: 600;
+  font-family: "Baloo 2", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #bb2d00;
+}
+.title:hover {
+  color: #00a8dd;
+}
+
+#wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background-color: #0288d1;
+  height: 100px;
+  min-height: 60px;
+}
+header .container {
+  align-items: center;
+}
+header .inner-header {
+  background-color: #4fc3f7;
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+header .inner-header .title:hover {
+  letter-spacing: 0.2em;
+}
+header .inner-header a:hover {
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.body {
+  flex: 1;
+  background-color: #dfa;
+}
+.body .container {
+  background-color: #757575;
+}
+
+footer {
+  max-height: 90px;
+  background-color: blueviolet;
+}
+.block[data-v-372f6153] {
+  border: 2px solid black;
+  border-radius: 20px;
+}

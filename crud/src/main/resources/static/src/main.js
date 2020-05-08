@@ -11,5 +11,6 @@ Vue.use(Vuetify);
 
 new Vue({
   el: '#vue-app',
-  render: a => a(Main)
+  render: a => a(Main),
+  Vuetify
 })

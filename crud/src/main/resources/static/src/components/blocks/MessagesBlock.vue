@@ -1,7 +1,10 @@
 <template lang="html">
   <div class="block">
       <input type="text" name="" value="">
-      <button type="button" name="button">Save!</button>
+      <v-btn class="" tile large color="teal" icon>
+      <v-icon>mdi-vuetify</v-icon>
+    </v-btn>
+
       <MessageList :messages="data" />
   </div>
 </template>
@@ -17,8 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.block {
-  border: 2px solid black;
-  border-radius: 20px;
-}
+
 </style>
