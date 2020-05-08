@@ -58,7 +58,7 @@ ul {
 
 header {
   background-color: $header_back_color;
-  height: 70px;
+  height: 100px;
   min-height: 60px;
   .container {
     align-items: center;
@@ -84,17 +84,15 @@ header {
 
 .body {
   flex: 1;
-  background-color: $content_color_back;
-  .container: {
+  background-color: #dfa;//$content_color_back;
+  .container{
     background-color: $content_color_main;
   }
-  .inner-body {
-    
-  }
+  
 }
 
 
 footer {
   max-height: 90px;
-  background-color: $footer_color_back;
+  background-color: blueviolet;
 }

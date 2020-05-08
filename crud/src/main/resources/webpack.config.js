@@ -6,7 +6,7 @@ module.exports = {
   entry: './static/src/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname,'static','out')
+    path: path.join(__dirname,'templates','out')
   },
   module: {
     rules: [

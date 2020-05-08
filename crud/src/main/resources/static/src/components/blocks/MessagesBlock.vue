@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div class="block">
       <input type="text" name="" value="">
       <button type="button" name="button">Save!</button>
       <MessageList :messages="data" />
@@ -17,4 +17,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.block {
+  border: 2px solid black;
+  border-radius: 20px;
+}
 </style>

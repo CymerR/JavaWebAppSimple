@@ -8,13 +8,12 @@
 
 <script>
 export default {
-  props: ['item']
-}
+  props: ["item"]
+};
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" >
 .row {
-  color: black;
-
+  font-size: 36px;
 }
 </style>
