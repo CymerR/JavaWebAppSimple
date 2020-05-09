@@ -1,12 +1,12 @@
 @import "./fonts/fonts.scss";
 
-$tx_color: #ff5722;
-$header_back_color: #0288d1;
-$header_content_color: #4fc3f7;
+$tx_color: #26c6da;
+$header_back_color: #ff7043;
+$header_content_color: #fbc02d;
 
 
-$content_color_back: #FBC02D;
-$content_color_main: #757575;
+$content_color_back: #ffca28;
+$content_color_main: #ffd54f;
 
 $footer_color_back: #3e2723;
 
@@ -84,15 +84,20 @@ header {
 
 .body {
   flex: 1;
-  background-color: #dfa;//$content_color_back;
+  background-color: $content_color_back;
   .container{
     background-color: $content_color_main;
   }
-  
+  .inner-body {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
 }
 
 
 footer {
   max-height: 90px;
-  background-color: blueviolet;
+  background-color: $footer_color_back;
 }

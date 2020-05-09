@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <MessagesBlock :data="messageslist" />
+    <MessagesBlock />
   </div>
 </template>
 
@@ -9,21 +9,20 @@ import MessagesBlock from './blocks/MessagesBlock.vue'
 export default {
   data() {
     return {
-      message: 'Привет, Vue!',
-      messageslist: [
-        {id: 0, text: "fuck fuck21"},
-        {id: 1, text: "yeh"},
-        {id: 2, text: "eboi"},
-        {id: 3, text: "Git "},
-        {id: 4, text: "Git another "}
-      ]
+
     }
+  },
+  computed: {
+
   },
   components: {
     MessagesBlock
   }
 }
 </script>
-<style lang="scss">
-
+<style lang="scss" scoped>
+  template {
+    width: 100%;
+    height: 100%;
+  }
 </style>

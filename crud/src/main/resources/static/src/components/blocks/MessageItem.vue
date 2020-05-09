@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <div class="row">
-       <em>{{ item.id }}</em>  {{item.text}}
+       <em>({{ item.id }})</em>  {{item.title}}
     </div>
   </div>
 </template>
@@ -15,5 +15,8 @@ export default {
 <style lang="css" >
 .row {
   font-size: 36px;
+}
+em {
+  font-size: 16px;
 }
 </style>
