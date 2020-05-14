@@ -9,9 +9,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@nuxtjs/vuetify": "^1.11.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
+    "deepmerge": "^4.2.2",
+    "fibers": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",

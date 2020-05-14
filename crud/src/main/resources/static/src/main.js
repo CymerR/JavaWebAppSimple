@@ -10,7 +10,6 @@ Vue.use(VueResource);
 Vue.use(Vuetify);
 
 new Vue({
-  el: '#vue-app',
   render: a => a(Main),
   Vuetify
-})
+}).$mount('#vue-app')

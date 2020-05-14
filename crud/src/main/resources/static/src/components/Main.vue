@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div class="wrapper">
     <MessagesBlock />
   </div>
 </template>
@@ -21,8 +21,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  template {
-    width: 100%;
-    height: 100%;
+  .wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
   }
 </style>
