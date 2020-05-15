@@ -7,11 +7,21 @@ public class Message {
 	static private long id_counter = 0;
 	private Long Id;
 	private String text;
+	
+	
+	
 	public Message(String text) {
 		super();
 		this.text = text;
 		this.Id = id_counter++;
 	}
+	
+	public Message(Long Id,String text) {
+		super();
+		this.text = text;
+		this.Id = id_counter++;
+	}
+	
 	public Long getId() {
 		return Id;
 	}
