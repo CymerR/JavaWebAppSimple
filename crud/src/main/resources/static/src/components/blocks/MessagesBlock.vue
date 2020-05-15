@@ -1,56 +1,56 @@
 <template lang="html">
-  <div class="block">
-      <div class="editor-block">
-        <input type="text" name="" value="">
-        <v-btn class="" tile large color="teal" icon>
-          <v-icon>mdi-vuetify</v-icon>
-        </v-btn>
-      </div>
-
-      <MessageList :messages="messages" />
+  <div class="__block">
+      <input type="text" placeholder="Add some todo!" v-model='message_text'>
+      <button @click="addMethod">Add!</button>
+    <MessageList :items="items" />
   </div>
 </template>
 
 <script>
 import MessageList from './MessageList.vue'
+import axios from 'axios'
+
 export default {
-  props: [],
-  data() {
+  data(){
     return {
-        messages: [],
-        enpoint: 'https://jsonplaceholder.typicode.com/todos'
+        items: [
+          {
+            id: 0, text: 'Hello'
+          },
+          {
+            id: 1, text: 'Undead'
+          },
+          {
+            id: 2, text: 'Miner'
+          },
+          {
+            id: 3, text: 'Lul'
+          }
+        ],
+        message_text: undefined
     }
   },
-  computed: {
+  created() {
+    axios.get('/messages')
+    .then(data => this.items = data.data)
 
   },
   components: {
     MessageList
   },
   methods: {
-    create() {
-      this.$http.get('/messages').then(result => {
-        result.json().then(body => this.messages = body)
+    addMethod() {
+      axios.post('/messages',
+      {
+        id: null,
+        text: this.message_text
       })
+      .then(response => console.log(response.status))
     }
-  },
-  created(){
-    this.create()
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.block {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-  .editor-block {
-    -ms-align-self: center;
-    align-self: center;
-  }
+
 </style>

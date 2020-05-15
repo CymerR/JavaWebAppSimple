@@ -1,24 +1,20 @@
 <template lang="html">
   <div>
-    <MessageItem v-for="message in messages" :key="message.id" :item="message" />
+    <MessageItem v-for="item in items" :key="item.id" :item="item" />
   </div>
 </template>
 
 <script>
 import MessageItem from './MessageItem.vue'
 export default {
-  props: ['messages'],
-  data(){
-    return {
-
-    }
-  },
+  props: ['items'],
   components: {
-    MessageItem,
+    MessageItem
   }
 
 }
 </script>
 
 <style lang="scss" scoped>
+
 </style>
