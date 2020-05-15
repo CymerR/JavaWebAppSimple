@@ -40,12 +40,9 @@ export default {
   },
   methods: {
     addMethod() {
-      axios.post('/messages',
-      {
-        id: null,
-        text: this.message_text
-      })
-      .then(response => console.log(response.status))
+      axios.post('/messages', {text: this.message_text})
+      .then(el => console.log(el))
+      created()
     }
   }
 }
