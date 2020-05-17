@@ -3,6 +3,7 @@ package ru.cmr.demo.controllers;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,6 +33,12 @@ public class MessageController {
 	@PostMapping
 	public Message postMessage(@RequestBody Message msg) {
 		messagesList.add(msg);
+		return msg;
+	}
+	
+	@DeleteMapping
+	public Message deleteMsg(@RequestBody Message msg) {
+		messagesList.remove(msg);
 		return msg;
 	}
 	

@@ -3,12 +3,12 @@ import './styles/main.scss'
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 import Main from './components/Main.vue'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+import Vuetify from './components/vuetify.js'
+
 import axios from 'axios'
 
 Vue.use(VueResource);
-Vue.use(Vuetify);
+console.log(Vuetify)
 
 
 new Vue({
@@ -17,7 +17,7 @@ new Vue({
   mounted() {
     //do something after mounting vue instance
     axios
-    .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-    // .then(response => (console.log(response)))
+      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      // .then(response => (console.log(response)))
   }
 }).$mount('#vue-app')
