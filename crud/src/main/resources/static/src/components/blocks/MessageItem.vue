@@ -5,10 +5,10 @@
       <div class="text">{{item.text}}</div>
     </div>
     <div class="nav">
-      <v-btn icon text>
+      <v-btn icon text @click="">
         <v-icon>mdi-account-edit</v-icon>
       </v-btn>
-      <v-btn icon text>
+      <v-btn icon text @click="deleteItem()">
         <v-icon>mdi-delete</v-icon>
       </v-btn>
     </div>
@@ -17,9 +17,17 @@
 </template>
 
 <script>
-
+    import axios from 'axios'
   export default {
-    props: ['item']
+    props: ['item'],
+    methods: {
+      deleteItem() {
+        console.log('delete')
+        axios.delete('./messages', {id: this.item.id}).then(response => {
+          console.log(response)
+        })
+      }
+    }
   }
 
 </script>

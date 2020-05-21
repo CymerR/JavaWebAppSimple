@@ -36,8 +36,8 @@ public class MessageController {
 		return msg;
 	}
 	
-	@DeleteMapping
-	public Message deleteMsg(@RequestBody Message msg) {
+	@DeleteMapping("/{id}")
+	public Message deleteMsg(@PathVariable Message msg) {
 		messagesList.remove(msg);
 		return msg;
 	}

@@ -18,24 +18,7 @@
   export default {
     data() {
       return {
-        items: [
-          {
-            id: 0,
-            text: 'Hello'
-          },
-          {
-            id: 1,
-            text: 'Undead'
-          },
-          {
-            id: 2,
-            text: 'Miner'
-          },
-          {
-            id: 3,
-            text: 'Lul'
-          }
-        ],
+        items: [],
         message_text: undefined
       }
     },
