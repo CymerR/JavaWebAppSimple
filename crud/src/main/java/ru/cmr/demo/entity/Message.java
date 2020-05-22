@@ -1,7 +1,5 @@
 package ru.cmr.demo.entity;
 
-import javax.annotation.Generated;
-
 public class Message {
 	
 	static private long id_counter = 0;
@@ -19,7 +17,7 @@ public class Message {
 	public Message(Long Id,String text) {
 		super();
 		this.text = text;
-		this.Id = id_counter++;
+		this.Id = Id;
 	}
 	
 	public Long getId() {

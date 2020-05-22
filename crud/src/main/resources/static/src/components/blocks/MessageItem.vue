@@ -17,13 +17,13 @@
 </template>
 
 <script>
-    import axios from 'axios'
+
+  import axios from 'axios'
   export default {
     props: ['item'],
     methods: {
       deleteItem() {
-        console.log('delete')
-        axios.delete('./messages', {id: this.item.id}).then(response => {
+        axios.delete('/messages', { params: { id: this.item.id } }).then(response => {
           console.log(response)
         })
       }

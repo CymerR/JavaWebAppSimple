@@ -22,9 +22,6 @@
         message_text: undefined
       }
     },
-    created() {
-      this._created()
-    },
     components: {
       MessageList
     },
@@ -32,9 +29,6 @@
       addMethod() {
         axios.post('/messages', { text: this.message_text }).then(el => console.log(el))
         this._created()
-      },
-      _created() {
-        axios.get('/messages').then(data => (this.items = data.data))
       }
     }
   }
